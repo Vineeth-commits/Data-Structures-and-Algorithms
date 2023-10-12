@@ -7,7 +7,7 @@ struct Array
     int size;
     int length;
 };
-
+// Input
 void input(struct Array *arr)
 {
     printf("Enter all the elements\n");
@@ -17,6 +17,7 @@ void input(struct Array *arr)
     }
 }
 
+//Printing
 void display(struct Array *arr)
 {
     printf("The elements in the array are:\n");
@@ -26,6 +27,7 @@ void display(struct Array *arr)
     }
 }
 
+//append
 void append(struct Array *arr)
 {
     int x;
@@ -35,6 +37,7 @@ void append(struct Array *arr)
     arr->length++;
 }
 
+//insertion
 void insert(struct Array *arr)
 {
     int index,num;
@@ -50,6 +53,7 @@ void insert(struct Array *arr)
     arr->length++;
 }
 
+//Deletion
 void delete(struct Array *arr)
 {
     int index,num;
@@ -62,6 +66,7 @@ void delete(struct Array *arr)
     arr->length--;
 }
 
+// Linear search
 void linear(struct Array *arr)
 {
     int key;
@@ -78,6 +83,7 @@ void linear(struct Array *arr)
     printf("Element not found");
 }
 
+//Binary search
 void binary(struct Array *arr)
 {
     int low = 0;
